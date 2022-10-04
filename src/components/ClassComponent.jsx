@@ -1,5 +1,7 @@
 
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 export default class ClassComponent extends React.Component {
     
     constructor(props) {
@@ -20,6 +22,8 @@ export default class ClassComponent extends React.Component {
     render() {
         return (
             <div>
+                <h1>Class Component</h1>
+                <Link to="/classComponet/functionComponent" className="link">FunctionComponent</Link>
                 <ul>
                     <li>
                         Название: {this.props.name}
@@ -38,6 +42,7 @@ export default class ClassComponent extends React.Component {
                     </label>
                     <button type="submit">click</button>
                 </form>
+
             </div>
         );
     }

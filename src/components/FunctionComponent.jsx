@@ -11,6 +11,7 @@ export default function FunctionComponent(props) {
 
     return (
         <div>
+            <h1>Function Component</h1>
             <ul>
                 <li>
                     Название: {name}
